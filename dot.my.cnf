@@ -1,0 +1,33 @@
+[client]
+host=localhost
+port=3306
+
+user=root
+password=root
+
+[mysql]
+database=mysql
+prompt='[ host:\h user:\u db:\d ]\\nsql> '
+prompt='sh: mysql -h \h -p \p -u \u \d \nsql> '
+compress
+show-warnings
+disable-auto-rehash
+# protocol=tcp
+
+# i-am-a-dummy !
+# i.e.: SET sql_safe_updates=1, sql_select_limit=1000, sql_max_join_size=1000000;
+# safe-updates
+
+# sql_select_limit=50
+# sql_max_join_size=50
+
+[mysqldump]
+flush-logs
+flush-privileges
+hex-blob
+verbose
+# fields-terminated-by=','
+# fields-enclosed-by='"'
+
+# vim: ft=conf:
+
